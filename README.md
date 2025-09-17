@@ -17,7 +17,7 @@ pip install -r r.txt
 python3 Vmail.py
   ```
 ### Extras
-coning soon!
+coming soon!
 #### Vgames
 coming soon!
 
