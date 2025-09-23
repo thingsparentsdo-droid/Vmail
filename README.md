@@ -21,7 +21,7 @@ pip install -r r.txt
 ```
 python3 Vmail.py
   ```
-if it askes you to install python click install.
+If it askes you to install python click install.
 ### Extras
 coming soon!
 #### Vgames
