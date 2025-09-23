@@ -10,10 +10,15 @@
 4. You may not copright, patent, or trademark any of this code.
 5. You may use this code and share it with others but may not take credit for it.
 6. You may request for permission to edit this code for personal uses.
+7. You may not abuse this code.
 ### Setup/Installation
 1. Download Files📁: Download all files right click and press extract all.
 2. Navigate to the directory using Terminal.
-3. Install requirements:
+3. Sign E-Contract:
+```
+python3 E-contract
+```
+5. Install requirements:
 ```
 pip install -r r.txt
    ```
