@@ -3,7 +3,7 @@ import time
 import firebase_admin
 from firebase_admin import credentials, firestore
 import os
-cred = credentials.Certificate("/Users/Vivaan/Downloads/vmail-6c9b7-firebase-adminsdk-fbsvc-adb9b144d3.json")
+cred = credentials.Certificate("vmail_server.json")
 firebase_admin.initialize_app(cred)
 os.system("clear")
 
