@@ -1,4 +1,5 @@
-
+# If You Are on windows replace clear with cls
+# use ctrl + f
 import time
 import firebase_admin
 from firebase_admin import credentials, firestore
