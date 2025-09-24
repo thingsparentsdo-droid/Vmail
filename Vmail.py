@@ -42,8 +42,8 @@ while True:
              vmailpass = input("Please enter your password: ")
              if curent_user_data["passtemp"] == vmailpass:
                 for i in curent_user_data["user_Vmail"]:
-                    prewiew = "\033[1m]" + i["subject"] + "\033[0m] | " + i["content"][0:70]
-                    print(f"\n{mesageindex} | {i[sender]} | {prewiew}\n")
+                    prewiew = "\033[1m" + i["subject"] + "\033[0m | " + i["content"][0:70]
+                    print(f"\n{mesageindex} | {i['sender']} | {prewiew}\n")
                     mesageindex += 1
              mesageindex = 1
              
@@ -53,7 +53,7 @@ while True:
              vmailpass = input("Please enter your password: ")
              if curent_user_data["passtemp"] == vmailpass:
                  for i in curent_user_data["user_Vmail"]:
-                     prewiew = "\033[1m" + i["subject"] + "\033[0m | " + i["content"][0:70]
+                     prewiew = "\033[1m" + i['subject'] + "\033[0m | " + i["content"][0:70]
                      print(f"\n{mesageindex} | {i['sender']} | {prewiew}\n")
                      mesageindex += 1
                  mesageindex = 1
@@ -80,8 +80,8 @@ while True:
     curent_user_data = curent_doc.get().to_dict()
     os.system("clear")
     for i in curent_user_data["user_Vmail"]:
-                prewiew = "\033[1m" + i["subject"] + "\033[0m | " + i["content"][0:70]
-                print(f"\n{mesageindex} | {i["sender"]} | {prewiew}\n")
+                prewiew = "\033[1m" + i['subject'] + "\033[0m | " + i["content"][0:70]
+                print(f"\n{mesageindex} | {i['sender']} | {prewiew}\n")
                 mesageindex += 1
     mesageindex = 1
     option = input("N = New Message\nE = Exit\nR = Read Message\nG = VGames\n|")
@@ -95,7 +95,7 @@ while True:
          break
     elif option == "R":
          index = int(input("\nWhich message do you want to read\n|"))
-         print(f"\n{mesageindex} | {curent_user_data["user_Vmail"][index - 1]["sender"]} | {curent_user_data["user_Vmail"][index - 1]["content"]}\n")
+         print(f"\n{mesageindex} | {curent_user_data['user_Vmail'][index - 1]['sender']} | {curent_user_data['user_Vmail'][index - 1]['content']}\n")
          done = input("\nPress Enter When done\nor R to respond\n|")
          if done == "r" or done == "R":
               r = input("To: ")
