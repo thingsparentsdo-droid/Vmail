@@ -53,8 +53,8 @@ while True:
              vmailpass = input("Please enter your password: ")
              if curent_user_data["passtemp"] == vmailpass:
                  for i in curent_user_data["user_Vmail"]:
-                     prewiew = "\033[1m]" + i["subject"] + "\033[0m] | " + i["content"][0:70]
-                     print(f"\n{mesageindex} | {i["sender"]} | {prewiew}\n")
+                     prewiew = "\033[1m" + i["subject"] + "\033[0m | " + i["content"][0:70]
+                     print(f"\n{mesageindex} | {i['sender']} | {prewiew}\n")
                      mesageindex += 1
                  mesageindex = 1
                  break
